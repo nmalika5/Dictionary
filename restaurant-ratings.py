@@ -25,11 +25,12 @@ while True:
             break
         restaurant_dict[rand_rest] = new_rest_score
     except ValueError:
+        break
 
 def print_restaurants():
     for name, rating in sorted(restaurant_dict.iteritems()):
         print "%s is rated at %s." % (name, rating)   
-        break
+
 
 print_restaurants()
 # new_rest_name = raw_input("Enter a new restaurant: ")
